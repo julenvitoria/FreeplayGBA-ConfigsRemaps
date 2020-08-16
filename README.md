@@ -1,4 +1,4 @@
-# FreeplayGBA-ConfigsRemaps 
+#FreeplayGBA-ConfigsRemaps 
 
 Repo for emulator and systems configs/patchs and games remaps
 
