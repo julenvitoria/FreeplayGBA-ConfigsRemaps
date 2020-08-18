@@ -1,7 +1,12 @@
 #!/bin/bash
 
 cd ~
-mkdir tmp
+if [ -d /home/pi/tmp ]; then
+        sudo rm -R /home/pi/tmp
+        mkdir /home/pi/tmp
+else
+        mkdir /home/pi/tmp
+fi
 cd tmp
 #Descargamos y copiamos las configuraciones de los emuladores
 ~/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-ConfigsRemaps/tree/master/cm3/emulators
