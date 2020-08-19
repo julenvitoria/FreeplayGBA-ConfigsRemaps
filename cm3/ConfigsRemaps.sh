@@ -8,12 +8,12 @@ else
         mkdir /home/pi/tmp
 fi
 cd tmp
-#Download and copy emulators configs
+#Downloading and copying emulators configs
 echo "Download and copy emulators configs"
 sleep 2
 ~/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-ConfigsRemaps/tree/master/cm3/emulators
 sudo cp -R emulators /opt/retropie/
-#Download and copy systems-games configs and remaps
+#Downloading and copying systems-games configs and remaps
 echo "Download and copy systems-games configs and remaps"
 sleep 2
 ~/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA-ConfigsRemaps/tree/master/cm3/configs
