@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd /home/pi
 if [ -d /home/pi/tmp ]; then
         sudo rm -R /home/pi/tmp
         mkdir /home/pi/tmp
