@@ -1,5 +1,17 @@
 #!/bin/bash
 
+#This section is for an image that I have
+if [ -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/wrally2.cfg" ]; then
+        rm -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/wrally2.cfg"
+fi
+if [ -f "/opt/retropie/configs/all/retroarch/config/FbAlpha/dmnfrnt.cfg" ]; then
+        rm -f "/opt/retropie/configs/all/retroarch/config/FbAlpha/dmnfrnt.cfg"
+fi
+if [ -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/dmnfrnt.cfg" ]; then
+        rm -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/dmnfrnt.cfg"
+fi
+#End of section
+
 cd /home/pi
 if [ -d /home/pi/tmp ]; then
         sudo rm -R /home/pi/tmp
